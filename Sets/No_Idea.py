@@ -1,0 +1,5 @@
+n,m=map(int,input().split())
+setn=set(map(int,input().split()))
+seta=set(map(int,input().split()))
+setb=set(map(int,input().split()))
+print(sum([(i in seta)- (i in setb) for i in setn]))
